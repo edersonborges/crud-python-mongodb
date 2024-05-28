@@ -38,7 +38,7 @@ def get_all_products(collection):
     """
     products = list(collection.find({}))
     products_with_ids = [{"_id": str(product["_id"]), "name": product["name"], "price": product["price"]} for product in products]
-    return jsonify(products_with_ids), 200
+    return products_with_ids, 200
 
 def get_product_by_id(collection, id):
     """
@@ -47,7 +47,9 @@ def get_product_by_id(collection, id):
     try:
         product = collection.find_one({"_id": ObjectId(id)}, {'_id': 0})
         if not product:
-            return jsonify({"error": "Product not found"}), 404
-        return jsonify(product), 200
+            return {"error": "Product not found"}, 404
+        return product, 200
     except Exception:
-        return jsonify({"error": "Invalid ID format"}), 400
+        return {"error": "Invalid ID format"}, 400
+
+

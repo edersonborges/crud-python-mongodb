@@ -28,7 +28,8 @@ Instalação
 
 6. Inicie o servidor:
 
-   python app.py
+   docker-compose build
+   docker-compose up
 
 O servidor será iniciado em http://localhost:5000/.
 
