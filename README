@@ -1,0 +1,38 @@
+Crud Python
+
+Este projeto é um CRUD utilizando PYTHON,MongoDB e Docker.
+
+Requisitos
+
+- Python 3.x
+- MongoDB
+
+Instalação
+
+1. Clone o repositório:
+
+   git clone https://github.com/seu-usuario/crud-python-mongodb.git
+
+2. Acesse o diretório do projeto:
+
+   cd crud-python-mongodb
+
+3. Crie e ative um ambiente virtual:
+
+   python3 -m venv venv
+   source venv/bin/activate  # No Windows, use "venv\Scripts\activate"
+
+4. Instale as dependências:
+
+   pip install -r requirements.txt
+
+6. Inicie o servidor:
+
+   python app.py
+
+O servidor será iniciado em http://localhost:5000/.
+
+Uso
+
+- Acesse http://localhost:5000/ para verificar se a API está em execução.
+- Utilize ferramentas como Postman ou curl para testar os endpoints da API.
