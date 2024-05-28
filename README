@@ -36,3 +36,4 @@ Uso
 
 - Acesse http://localhost:5000/ para verificar se a API está em execução.
 - Utilize ferramentas como Postman ou curl para testar os endpoints da API.
+- Acesse a documentação em http://localhost:5000/doc
